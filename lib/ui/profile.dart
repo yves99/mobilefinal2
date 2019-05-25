@@ -42,7 +42,7 @@ class profileScreenState extends State<profileScreen> {
           title: Text("Profile"),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(18),
+          padding: const EdgeInsets.all(15),
           child: Form(
             key: _formkey,
             child: ListView(

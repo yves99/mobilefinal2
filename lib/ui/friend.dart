@@ -26,30 +26,39 @@ class friendScreenState extends State<friendScreen> {
         itemBuilder: (BuildContext context, int index) {
           return Card(
             child: Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(15),
               child: InkWell(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      "${friends[index].id} : ${friends[index].name}",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                    Padding(
+                      padding: const EdgeInsets.only(top:5.0),
+                      child: Text(
+                        "${friends[index].id} : ${friends[index].name}",
+                        style:
+                            TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                      ),
                     ),
-                    SizedBox(height: 20),
-                    Text(
-                      friends[index].email,
-                      style: TextStyle(fontSize: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(top:5.0),
+                      child: Text(
+                        friends[index].email,
+                        style: TextStyle(fontSize: 16),
+                      ),
                     ),
-                    SizedBox(height: 20),
-                    Text(
-                      friends[index].phone,
-                      style: TextStyle(fontSize: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(top:5.0),
+                      child: Text(
+                        friends[index].phone,
+                        style: TextStyle(fontSize: 16),
+                      ),
                     ),
-                    SizedBox(height: 20),
-                    Text(
-                      friends[index].website,
-                      style: TextStyle(fontSize: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(top:5.0),
+                      child: Text(
+                        friends[index].website,
+                        style: TextStyle(fontSize: 16),
+                      ),
                     ),
                   ],
                 ),
